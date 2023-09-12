@@ -3,6 +3,7 @@ nav {
   height: 72px;
   display: flex;
   align-items: center;
+  margin: 0 auto;
 }
 .img-container {
   width: 12%;
@@ -19,6 +20,7 @@ ul {
   box-shadow: rgba(28, 28, 28, 0.08) 0px 2px 8px;
   display: flex;
   align-items: center;
+  border-radius: .8rem;
 }
 li {
   list-style: none;
@@ -27,19 +29,18 @@ li {
 .location {
   height: 52px;
   width: max-content;
-  border-radius: 8px 0 0 8px;
+
   outline: none;
   border: transparent;
   padding: 0px 15px;
   background: transparent;
 }
 .search-input {
-  height: 52px;
-  border-radius: 0 8px 8px 0;
   width: 411px;
   outline: none;
   border: transparent;
   font-size: 0.9rem;
+  letter-spacing: 0.4px;
 }
 .search-btn {
   border: transparent;
@@ -49,14 +50,14 @@ li {
   margin: 0 10px;
 }
 
-.authentication{
-    display: flex;
-    gap: 1rem;
-    align-items: center;
+.authentication {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 .authentication li {
-    font-size: 1.2rem;
-    color: rgb(105, 105, 105);
-    font-weight: 300;
-    line-height: 1.5;
+  font-size: 1rem;
+  color: rgb(105, 105, 105);
+  font-weight: 300;
+  line-height: 1.5;
 }
