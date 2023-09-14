@@ -1,0 +1,79 @@
+@import "../../base";
+@import "../../mixin";
+
+.card-container {
+  max-width: 350px;
+  height: 350px;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: ease-in 0.2s;
+
+  &:hover {
+    transition: ease-in 0.2s;
+    box-shadow: $box-shadow;
+  }
+
+  .img-container {
+    height: 75%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 21px;
+      padding: 9px;
+    }
+  }
+
+  .text-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 13px;
+
+    .col-1 {
+      .title {
+        font-size: 1.06rem;
+        font-weight: 500;
+        line-height: 20px;
+        color: $text-color-black;
+      }
+
+      .location {
+        font-size: 0.88rem;
+        font-weight: 300;
+        line-height: 1.31rem;
+        color: $text-color-black-3;
+      }
+    }
+
+    .col-2 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      .amount {
+        font-size: 0.88rem;
+        font-weight: 300;
+        line-height: 1.31rem;
+        color: $text-color-black-3;
+      }
+
+      .time {
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 500;
+        color: $text-color-black-2;
+      }
+
+      .rating {
+        background-color: #045604;
+        color: white;
+        padding: 2px 4px;
+        font-weight: bold;
+        border-radius: 5px;
+        margin-top: 2px;
+        font-size: 13px;
+      }
+    }
+  }
+}

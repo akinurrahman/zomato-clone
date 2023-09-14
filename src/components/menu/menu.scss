@@ -1,0 +1,16 @@
+@import "../../base";
+@import "../../mixin";
+.menu-container {
+  @include widthCenter;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 40px;
+  .title-container {
+    width: 100%;
+    .title {
+      @include title;
+    }
+  }
+}
