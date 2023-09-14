@@ -1,13 +1,12 @@
-import React from 'react'
-import './App.css'
-import Home from './pages/homepage/Home'
-import Footer from './components/footer/Footer'
+import React from "react";
+import "./App.scss";
+import Home from "./pages/homepage/Home";
 const App = () => {
   return (
     <div>
-      <Home/>
+      <Home />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

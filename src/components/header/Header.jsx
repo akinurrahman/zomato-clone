@@ -1,12 +1,15 @@
 import React from "react";
-import "./header.css";
+import "./header.scss";
 import { FiSearch } from "react-icons/fi";
 const Header = () => {
   return (
     <header>
       <nav>
         <div className="img-container">
-         <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png" alt="logo" />
+          <img
+            src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png"
+            alt="logo"
+          />
         </div>
         <ul>
           <div className="col-1">

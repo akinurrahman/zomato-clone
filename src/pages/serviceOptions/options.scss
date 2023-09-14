@@ -1,0 +1,47 @@
+@import "../../base";
+@import "../../mixin";
+.option-root {
+  display: flex;
+  gap: 25px;
+  @include widthCenter;
+  padding-top: 15px;
+  .nav-link {
+    text-decoration: none;
+    .options-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 17px 0;
+
+      .img {
+        color: $gray-color;
+        background: $white-color;
+        border-radius: 50%;
+        width: 3.94rem;
+        height: 3.94rem;
+        img {
+          width: 100%;
+          padding: 13px;
+        }
+      }
+
+      p {
+        font-weight: 400;
+        color: $gray-color;
+      }
+    }
+    &.active {
+      .options-container {
+        border-bottom: 3px solid $faded-red;
+      }
+
+      .img {
+        background: $white-2;
+      }
+
+      p {
+        color: $faded-red;
+      }
+    }
+  }
+}

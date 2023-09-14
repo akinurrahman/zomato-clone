@@ -1,0 +1,10 @@
+@mixin widthCenter {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+@mixin title {
+  font-weight: 500;
+  font-size: 1.88rem;
+  line-height: 2.25rem;
+  color: $text-color-black;
+}

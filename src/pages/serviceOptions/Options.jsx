@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "./options.css";
+import "./options.scss";
 const Options = () => {
   return (
     <div className="option-root">

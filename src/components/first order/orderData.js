@@ -16,8 +16,8 @@ const foorData = [
   },
   {
     id: 3,
-    img: `https://b.zmtcdn.com/data/o2_assets/019409fe8f838312214d9211be010ef31678798444.jpeg`,
-    title: `North Indian`,
+    img: `https://b.zmtcdn.com/data/o2_assets/c21624eac87ed1c8c87ef1ea52980ded1632716659.png`,
+    title: `Chowmein`,
   },
   {
     id: 4,
@@ -33,11 +33,6 @@ const foorData = [
     id: 6,
     img: `https://b.zmtcdn.com/data/o2_assets/8dc39742916ddc369ebeb91928391b931632716660.png`,
     title: `Dosa`,
-  },
-  {
-    id: 7,
-    img: `https://b.zmtcdn.com/data/o2_assets/c21624eac87ed1c8c87ef1ea52980ded1632716659.png`,
-    title: `Chowmein`,
   },
 ];
 export default foorData;

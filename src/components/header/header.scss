@@ -1,0 +1,62 @@
+@import "../../base";
+@import "../../mixin";
+nav {
+  @include widthCenter;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  .img-container {
+    width: 12%;
+    img {
+      width: 100%;
+    }
+  }
+
+  ul {
+    width: 88%;
+    display: flex;
+    justify-content: space-around;
+    .col-1 {
+      box-shadow: $box-shadow;
+      display: flex;
+      align-items: center;
+      border-radius: 0.8rem;
+      .location {
+        height: 52px;
+        width: max-content;
+        cursor: pointer;
+        outline: none;
+        border: transparent;
+        padding: 0px 15px;
+        background: transparent;
+      }
+      .search-input {
+        max-width: 411px;
+        outline: none;
+        border: transparent;
+        font-size: 0.9rem;
+        letter-spacing: 0.4px;
+      }
+      .search-btn {
+        border: transparent;
+        height: 52px;
+        display: flex;
+        align-items: center;
+        margin: 0 10px;
+      }
+    }
+
+    .authentication {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      li {
+        font-size: 1rem;
+        color: $gray-color;
+        font-weight: 300;
+        line-height: 1.5;
+        cursor: pointer;
+      }
+    }
+  }
+}
