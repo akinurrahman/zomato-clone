@@ -3,7 +3,7 @@ import "./header.scss";
 import { FiSearch } from "react-icons/fi";
 import { AppContext } from "../../context/AppState";
 const Header = () => {
-  const { address, setAddress, handleLocation } = useContext(AppContext);
+  const { address, setAddress, handleLocation,search, setSearch,handleSearch } = useContext(AppContext);
   return (
     <header>
       <nav>
@@ -40,6 +40,8 @@ const Header = () => {
                 type="text"
                 placeholder="Search for restaurant,cusin or a dish"
                 className="search-input"
+                value={search}
+                onChange={handleSearch}
               />
             </li>
           </div>

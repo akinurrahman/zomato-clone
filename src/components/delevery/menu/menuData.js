@@ -1,12 +1,12 @@
 const foodData = [
   {
     id: 0,
-    img: `https://b.zmtcdn.com/data/pictures/chains/7/2067/683aa4e173a55a0a94fcc5165d3295f5_o2_featured_v2.jpg`,
-    title: `Cocoberry`,
-    location: `Frozen Yogurt, Desserts, Beverages`,
-    rating: `3.9`,
-    amount: 150,
-    time: 32,
+    img: `https://b.zmtcdn.com/data/pictures/4/20497454/7348cf35be9b2fb33c23685c58f74465_o2_featured_v2.jpg`,
+    title: `Mashaallah Chicken Corner`,
+    location: `North Indian, Biryani`,
+    rating: 4.1,
+    amount: 100,
+    time: 29,
   },
   {
     id: 1,

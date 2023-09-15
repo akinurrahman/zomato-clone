@@ -6,13 +6,16 @@ import Options from "../serviceOptions/Options";
 import Delevery from "../../components/delevery/Delevery";
 import Dining from "../../components/dining out/Dining";
 import NightLife from "../../components/night life/NightLife";
+import Filter from "../../components/filter/Filter";
 
 const Home = () => {
   return (
     <div className="home">
       <Router>
         <Header />
+
         <Options />
+        <Filter />
         <Routes>
           <Route path="/delevery" element={<Delevery />} />
           <Route path="/dining" element={<Dining />} />
