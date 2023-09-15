@@ -1,13 +1,14 @@
-import React from "react";
-import foorData from "./orderData";
+import React, { useContext } from "react";
 import "./order.scss";
+import { AppContext } from "../../../context/AppState";
 const FirstOrder = () => {
+  const {firstOrder,setFirstOrder}= useContext(AppContext)
   return (
     <div className="first-order-container">
       <div className="order-container">
         <section className="title">Inspiration for your first order</section>
         <section className="images-container">
-          {foorData.map((currFoood) => {
+          {firstOrder.map((currFoood) => {
             return (
               <div key={currFoood.id}>
                 <div className="img-card">

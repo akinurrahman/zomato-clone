@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./header.scss";
 import { FiSearch } from "react-icons/fi";
+import { AppContext } from "../../context/AppState";
 const Header = () => {
+  const { address, setAddress, handleLocation } = useContext(AppContext);
   return (
     <header>
       <nav>
@@ -14,17 +16,26 @@ const Header = () => {
         <ul>
           <div className="col-1">
             <li>
-              <select className="location">
+              <select
+                className="location"
+                onChange={handleLocation}
+                value={address}
+              >
                 <option>Choose your Address</option>
                 <option value="delhi">Delhi</option>
-                <option value="mumbai">Mumbai</option>
+                <option value="Pune">Pune</option>
+                <option value="Dhubri">Dhubri</option>
+                <option value="Bangaluru">Bangaluru</option>
+                <option value="Noida">Noida</option>
+                <option value="Guwahati">Guwahati</option>
+                <option value="Kolkata">Kolkata</option>
               </select>
               |
             </li>
             <li className="search-btn">
               <FiSearch size={20} />
             </li>
-            <li>
+            <li className="input-container">
               <input
                 type="text"
                 placeholder="Search for restaurant,cusin or a dish"
@@ -38,7 +49,6 @@ const Header = () => {
           </div>
         </ul>
       </nav>
-      
     </header>
   );
 };

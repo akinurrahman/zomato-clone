@@ -2,7 +2,6 @@ import React from "react";
 import "./home.scss";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
 import Options from "../serviceOptions/Options";
 import Delevery from "../../components/delevery/Delevery";
 import Dining from "../../components/dining out/Dining";
@@ -19,7 +18,6 @@ const Home = () => {
           <Route path="/dining" element={<Dining />} />
           <Route path="/nightlife" element={<NightLife />} />
         </Routes>
-        <Footer />
       </Router>
     </div>
   );

@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./brand.scss";
-import brandData from "./data";
+import { AppContext } from "../../../context/AppState";
+
 const TopBrands = () => {
+  const {brand, setBrand}= useContext(AppContext)
   return (
     <div className="top-brand-container">
       <div className="brand-container">
         <section className="title">Top brands for you</section>
         <section className="images-container">
-          {brandData.map((currBrand) => {
+          {brand.map((currBrand) => {
             return (
               <div key={currBrand.id}>
                 <div className="img-card">
