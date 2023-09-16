@@ -14,7 +14,7 @@ const Menu = () => {
   return (
     <div className="menu-container">
       <section className="title-container">
-        <p className="title">Delivery Restaurants in {address}</p>
+        <p className="title">Trending dining restaurants in {address}</p>
       </section>
       {filterMenuByTitleAndLocation.length === 0 && 
         <p>No matching restaurants found.</p>}

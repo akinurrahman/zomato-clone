@@ -1,0 +1,37 @@
+@import "../../../base";
+@import "../../../mixin";
+
+.collection-outer-container {
+  width: 100vw;
+  height: 477px;
+  background: $bg-01;
+  display: flex;
+  align-items: center;
+  .collection-container {
+    @include widthCenter;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    .text-container {
+      .title {
+        @include title;
+        line-height: 3.25rem;
+      }
+      .describtion {
+        font-size: 1.13rem;
+        line-height: 25px;
+        font-weight: 300;
+        color: $text-color-black-2;
+      }
+    }
+    .collection-card-container {
+      width: 100%;
+      display: flex;
+      overflow-x: auto;
+      gap: 19px;
+      &::-webkit-scrollbar {
+        width: 0;
+      }
+    }
+  }
+}

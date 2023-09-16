@@ -1,5 +1,5 @@
-@import "../../base";
-@import "../../mixin";
+@import "../../../base";
+@import "../../../mixin";
 
 .card-container {
   max-width: 350px;
@@ -66,7 +66,7 @@
       }
 
       .time {
-        font-size: 12px;
+        font-size: .75rem;
         line-height: 16px;
         font-weight: 500;
         color: $text-color-black-2;
@@ -79,7 +79,7 @@
         font-weight: bold;
         border-radius: 5px;
         margin-top: 2px;
-        font-size: 13px;
+        font-size: .81rem;
       }
     }
   }

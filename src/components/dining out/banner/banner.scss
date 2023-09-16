@@ -1,0 +1,8 @@
+@import "../../../base";
+@import "../../../mixin";
+.banner{
+    @include widthCenter;
+    img{
+        width: 100%;
+    }
+}

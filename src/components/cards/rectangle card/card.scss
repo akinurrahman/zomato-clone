@@ -1,0 +1,30 @@
+.rectangle-card-container {
+  width: 260px;
+  height: 320px;
+
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #ccc;
+  border-radius: 0.6rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: white;
+  position: relative;
+  .text-container {
+    position: absolute;
+    bottom: 8px;
+    left: 13px;
+    font-family: "Roboto", sans-serif;
+  }
+  p:nth-child(1) {
+    font-size: 1.13rem;
+    font-weight: 300;
+    line-height: 27px;
+    font-family: "Roboto", sans-serif;
+  }
+  p:nth-child(2) {
+    font-size: .88rem;
+    font-weight: 400;
+    line-height: 17px;
+    font-family: "Roboto", sans-serif;
+  }
+}

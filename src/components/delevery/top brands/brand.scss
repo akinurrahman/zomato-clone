@@ -13,6 +13,23 @@
     .title {
       @include title;
     }
+    .icon-container {
+      display: flex;
+      align-items: center;
+      font-size: 2.5rem;
+      position: relative;
+      justify-content: space-between;
+      .prev-svg {
+        position: absolute;
+        left: 0;
+        cursor: pointer;
+      }
+      .next-svg {
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+      }
+    }
     .images-container {
       width: auto;
       overflow-x: auto;

@@ -2,6 +2,7 @@ import { createContext, useState } from "react";
 import menuData from "../components/delevery/menu/menuData";
 import brandData from "../components/delevery/top brands/data";
 import foorData from "../components/delevery/first order/orderData";
+import collectionData from "../components/dining out/collections/collectionData";
 const AppContext = createContext();
 
 const AppState = (props) => {
@@ -10,12 +11,13 @@ const AppState = (props) => {
   const [firstOrder, setFirstOrder] = useState(foorData);
   const [address, setAddress] = useState("Mumbai");
   const [search, setSearch] = useState("");
+  const [collection, SetCollection] = useState(collectionData);
   const handleLocation = (e) => {
     setAddress(e.target.value);
   };
-  const handleSearch =(e)=>{
-    setSearch(e.target.value)
-  }
+  const handleSearch = (e) => {
+    setSearch(e.target.value);
+  };
   return (
     <AppContext.Provider
       value={{
@@ -31,6 +33,8 @@ const AppState = (props) => {
         search,
         setSearch,
         handleSearch,
+        collection,
+        SetCollection,
       }}
     >
       {props.children}
