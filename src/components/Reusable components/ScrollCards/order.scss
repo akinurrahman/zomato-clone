@@ -33,12 +33,19 @@
           margin: 0 0.3rem;
           cursor: pointer;
         }
-        p {
+        .elem-title {
           text-align: center;
           font-size: 1.25rem;
-          font-weight: 400;
+          font-weight: 500;
           line-height: 32px;
-          color: $text-color-black-2;
+          color: $text-color-black;
+        }
+        .elem-time {
+          text-align: center;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          color: $text-color-black;
         }
       }
     }

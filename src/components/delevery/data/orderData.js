@@ -1,4 +1,4 @@
-const foorData = [
+const foodData = [
   {
     id: 0,
     img: `https://b.zmtcdn.com/data/dish_images/d5ab931c8c239271de45e1c159af94311634805744.png`,
@@ -35,4 +35,4 @@ const foorData = [
     title: `Dosa`,
   },
 ];
-export default foorData;
+export default foodData;
