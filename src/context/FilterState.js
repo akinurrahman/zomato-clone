@@ -36,7 +36,7 @@ const FilterState = (props) => {
     const isRatingMatch = !rating || parseFloat(currElem.rating) >= 4;
 
     // Include the item in the filtered result if all conditions are met
-    return titleMatch && locationMatch && isVegetarian && isRatingMatch;
+    return (titleMatch || locationMatch) && isVegetarian && isRatingMatch;
   });
   return (
     // Provide the filtered data and filter handlers to child components
