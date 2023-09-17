@@ -7,6 +7,7 @@ const foodData = [
     rating: 4.1,
     amount: 100,
     time: 29,
+    isVeg: false,
   },
   {
     id: 1,
@@ -16,6 +17,7 @@ const foodData = [
     rating: 3.9,
     amount: 150,
     time: 42,
+    isVeg: false,
   },
   {
     id: 2,
@@ -25,6 +27,7 @@ const foodData = [
     rating: 3.9,
     amount: 150,
     time: 45,
+    isVeg: false,
   },
   {
     id: 3,
@@ -34,6 +37,7 @@ const foodData = [
     rating: `New`,
     amount: 150,
     time: 41,
+    isVeg: true,
   },
   {
     id: 4,
@@ -43,6 +47,7 @@ const foodData = [
     rating: 4.2,
     amount: 150,
     time: 21,
+    isVeg: false,
   },
   {
     id: 5,
@@ -52,6 +57,7 @@ const foodData = [
     rating: 4.0,
     amount: 150,
     time: 49,
+    isVeg: true,
   },
   {
     id: 6,
@@ -61,6 +67,7 @@ const foodData = [
     rating: 3.7,
     amount: 150,
     time: 40,
+    isVeg: true,
   },
   {
     id: 7,
@@ -70,6 +77,7 @@ const foodData = [
     rating: 4.2,
     amount: 150,
     time: 21,
+    isVeg: true,
   },
   {
     id: 8,
@@ -79,6 +87,7 @@ const foodData = [
     rating: 4.4,
     amount: 200,
     time: 18,
+    isVeg: false,
   },
   {
     id: 9,
@@ -88,6 +97,7 @@ const foodData = [
     rating: 4.1,
     amount: 200,
     time: 25,
+    isVeg: true,
   },
   {
     id: 10,
@@ -97,6 +107,7 @@ const foodData = [
     rating: 4.1,
     amount: 200,
     time: 20,
+    isVeg: false,
   },
   {
     id: 11,
@@ -106,6 +117,7 @@ const foodData = [
     rating: 3.4,
     amount: 200,
     time: 33,
+    isVeg: true,
   },
   {
     id: 12,
@@ -115,6 +127,7 @@ const foodData = [
     rating: 4.1,
     amount: 200,
     time: 24,
+    isVeg: false,
   },
   {
     id: 13,
@@ -124,6 +137,8 @@ const foodData = [
     rating: 3.9,
     amount: 200,
     time: 25,
+
+    isVeg: false,
   },
   {
     id: 14,
@@ -133,6 +148,7 @@ const foodData = [
     rating: 4.4,
     amount: 150,
     time: 16,
+    isVeg: true,
   },
 ];
 export default foodData;

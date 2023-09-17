@@ -18,6 +18,15 @@ const AppState = (props) => {
   const handleSearch = (e) => {
     setSearch(e.target.value);
   };
+
+  const [isVegFilterActive, setIsVegFilterActive] = useState(false);
+  const handleVegFilter = () => {
+    setIsVegFilterActive(!isVegFilterActive);
+  };
+  const [rating, setRating] = useState(false);
+  const handleRating = () => {
+    setRating(!rating);
+  };
   return (
     <AppContext.Provider
       value={{
@@ -35,6 +44,12 @@ const AppState = (props) => {
         handleSearch,
         collection,
         SetCollection,
+        handleVegFilter,
+        isVegFilterActive,
+        setIsVegFilterActive,
+        handleRating,
+        rating,
+        setRating,
       }}
     >
       {props.children}

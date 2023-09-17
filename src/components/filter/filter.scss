@@ -6,11 +6,20 @@
   gap: 10px;
   flex-wrap: wrap;
   margin: 30px auto;
+  
 
   div {
     border: 1px solid $gray-color;
     padding: 5px 13px;
     border-radius: 6px;
     color: $gray-color;
+    cursor: pointer;
+  }
+  .filter-active {
+    background: #e03546;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
   }
 }

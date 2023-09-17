@@ -4,12 +4,16 @@ import Card from "../../cards/squre card/Card";
 import { AppContext } from "../../../context/AppState";
 
 const Menu = () => {
-  const { menu, address, search } = useContext(AppContext)
+  const { menu, address, search, isVegFilterActive } = useContext(AppContext);
   const filterMenuByTitleAndLocation = menu.filter((currElem) => {
     const searchTerm = search.toLowerCase();
     const titleMatch = currElem.title.toLowerCase().includes(searchTerm);
     const locationMatch = currElem.location.toLowerCase().includes(searchTerm);
-    return titleMatch || locationMatch;
+    if (isVegFilterActive) {
+      return (titleMatch || locationMatch) && currElem.isVeg;
+    } else {
+      return titleMatch || locationMatch;
+    }
   });
   return (
     <div className="menu-container">
