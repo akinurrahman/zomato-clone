@@ -2,8 +2,10 @@ import React, { useContext } from "react";
 import "./header.scss";
 import { FiSearch } from "react-icons/fi";
 import { AppContext } from "../../context/AppState";
+import { FilterContext } from "../../context/FilterState";
 const Header = () => {
-  const { address, setAddress, handleLocation,search, setSearch,handleSearch } = useContext(AppContext);
+  const { address, handleLocation } = useContext(AppContext);
+  const { search, handleSearch } = useContext(FilterContext);
   return (
     <header>
       <nav>

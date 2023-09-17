@@ -10,23 +10,11 @@ const AppState = (props) => {
   const [brand, setBrand] = useState(brandData);
   const [firstOrder, setFirstOrder] = useState(foorData);
   const [address, setAddress] = useState("Mumbai");
-  const [search, setSearch] = useState("");
   const [collection, SetCollection] = useState(collectionData);
   const handleLocation = (e) => {
     setAddress(e.target.value);
   };
-  const handleSearch = (e) => {
-    setSearch(e.target.value);
-  };
 
-  const [isVegFilterActive, setIsVegFilterActive] = useState(false);
-  const handleVegFilter = () => {
-    setIsVegFilterActive(!isVegFilterActive);
-  };
-  const [rating, setRating] = useState(false);
-  const handleRating = () => {
-    setRating(!rating);
-  };
   return (
     <AppContext.Provider
       value={{
@@ -39,17 +27,9 @@ const AppState = (props) => {
         address,
         setAddress,
         handleLocation,
-        search,
-        setSearch,
-        handleSearch,
+
         collection,
         SetCollection,
-        handleVegFilter,
-        isVegFilterActive,
-        setIsVegFilterActive,
-        handleRating,
-        rating,
-        setRating,
       }}
     >
       {props.children}

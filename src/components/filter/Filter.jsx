@@ -2,9 +2,9 @@ import React, { useContext } from "react";
 import "./filter.scss";
 import { RxCross2 } from "react-icons/rx";
 import { AppContext } from "../../context/AppState";
+import { FilterContext } from "../../context/FilterState";
 const Filter = () => {
-  const { handleVegFilter, isVegFilterActive, handleRating, rating } =
-    useContext(AppContext);
+  const { handleVegFilter, isVegFilterActive,handleRating, rating } = useContext(FilterContext);
   return (
     <section className="filter">
       <div>Filters</div>
