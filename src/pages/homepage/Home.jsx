@@ -5,6 +5,7 @@ import Options from "../serviceOptions/Options";
 import Delevery from "../../components/delevery/Delevery";
 import Dining from "../../components/dining out/Dining";
 import NightLife from "../../components/night life/NightLife";
+import Index from "./Index";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
 
         <Options />
         <Routes>
+          <Route path="/" element={<Index/>}/>
           <Route path="/delevery" element={<Delevery />} />
           <Route path="/dining" element={<Dining />} />
           <Route path="/nightlife" element={<NightLife />} />
