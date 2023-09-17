@@ -1,16 +1,18 @@
 import React, { useContext } from "react";
 import "./menu.scss";
-import Card from "../../cards/squre card/Card";
+import Card from "../../Reusable components/cards/squre card/Card";
 import { AppContext } from "../../../context/AppState";
 import { FilterContext } from "../../../context/FilterState";
 
-const Menu = () => {
+const Menu = ({ title }) => {
   const { address } = useContext(AppContext);
   const { filterMenuByTitleAndLocation } = useContext(FilterContext);
   return (
     <div className="menu-container">
       <section className="title-container">
-        <p className="title">Trending dining restaurants in {address}</p>
+        <p className="title">
+          {title} {address}
+        </p>
       </section>
       {filterMenuByTitleAndLocation.length === 0 && (
         <p>No matching restaurants found.</p>

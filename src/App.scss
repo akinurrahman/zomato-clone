@@ -12,20 +12,20 @@ body {
 }
 
 /* Default font size for all screens */
-body {
+html {
   font-size: 16px;
 }
 
 /* Media query for screens with a maximum width of 768px */
 @media (max-width: 768px) {
-  body {
+  html {
     font-size: 14px;
   }
 }
 
 /* Media query for screens with a maximum width of 480px */
 @media (max-width: 480px) {
-  body {
+  html {
     font-size: 12px;
   }
 }

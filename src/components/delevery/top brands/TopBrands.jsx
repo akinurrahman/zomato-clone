@@ -4,7 +4,7 @@ import { AppContext } from "../../../context/AppState";
 import { GrFormPrevious, GrFormNext } from "react-icons/gr";
 
 const TopBrands = () => {
-  const { brand, setBrand } = useContext(AppContext);
+  const { brand } = useContext(AppContext);
   return (
     <div className="top-brand-container">
       <div className="brand-container">

@@ -45,6 +45,7 @@ const FilterState = (props) => {
         filterMenuByTitleAndLocation,
         search,
         handleSearch,
+        isVegFilterActive,
         handleVegFilter,
         handleRating,
         rating,

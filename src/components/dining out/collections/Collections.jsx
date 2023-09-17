@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "./collections.scss";
-import Card from "../../cards/rectangle card/Card";
+import Card from "../../Reusable components/cards/rectangle card/Card";
 import { AppContext } from "../../../context/AppState";
 const Collections = () => {
   const { collection, address } = useContext(AppContext);
@@ -10,8 +10,8 @@ const Collections = () => {
         <div className="text-container">
           <p className="title">Collections</p>
           <p className="describtion">
-            Explore curated lists of top restaurants, cafes, pubs, and bars in 
-            { ` ${address}`}, based on trends
+            Explore curated lists of top restaurants, cafes, pubs, and bars in
+            {` ${address}`}, based on trends
           </p>
         </div>
         <div className="collection-card-container">

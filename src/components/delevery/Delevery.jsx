@@ -1,7 +1,7 @@
 import React from "react";
 import FirstOrder from "./first order/FirstOrder";
 import TopBrands from "./top brands/TopBrands";
-import Menu from "./menu/Menu";
+import Menu from "../Reusable components/menu/Menu";
 import Filter from "../filter/Filter";
 
 const Delevery = () => {
@@ -10,7 +10,7 @@ const Delevery = () => {
       <Filter />
       <FirstOrder />
       <TopBrands />
-      <Menu />
+      <Menu title="Delivery Restaurants in" />
     </div>
   );
 };
