@@ -7,7 +7,7 @@ const ScrollCards = ({ title, data, style }) => {
     if (containerRef.current) {
       containerRef.current.scrollTo({
         left: containerRef.current.scrollLeft - 300,
-        behavior: "smooth", // Add smooth scrolling behavior
+        behavior: "smooth",
       });
     }
   };
@@ -16,7 +16,7 @@ const ScrollCards = ({ title, data, style }) => {
     if (containerRef.current) {
       containerRef.current.scrollTo({
         left: containerRef.current.scrollLeft + 300,
-        behavior: "smooth", // Add smooth scrolling behavior
+        behavior: "smooth",
       });
     }
   };

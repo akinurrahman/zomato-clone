@@ -7,12 +7,28 @@
   background: $bg-01;
 
   .collection-container {
+    position: relative;
     @include widthCenter;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 25px;
+    .svg {
+      font-size: 2.5rem;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      margin-top: 2.94rem;
+    }
+    .svg-prev {
+      left: -2.19rem;
+    }
+
+    .svg-next {
+      right: -2.19rem;
+    }
     .text-container {
       .title {
         @include title;
@@ -28,6 +44,10 @@
     .collection-card-container {
       display: flex;
       overflow-x: auto;
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
       gap: 19px;
       .cards {
         cursor: pointer;
