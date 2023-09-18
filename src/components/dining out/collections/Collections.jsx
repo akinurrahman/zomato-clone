@@ -17,7 +17,7 @@ const Collections = () => {
         <div className="collection-card-container">
           {collection.map((currElem) => {
             return (
-              <div key={currElem.id}>
+              <div key={currElem.id} className="cards">
                 <Card
                   backgroundImage={currElem.img}
                   title={currElem.title}
