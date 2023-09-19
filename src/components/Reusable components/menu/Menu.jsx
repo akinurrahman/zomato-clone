@@ -14,9 +14,7 @@ const Menu = ({ title }) => {
           {title} {address}
         </p>
       </section>
-      {filteredMenu.length === 0 && (
-        <p>No matching restaurants found.</p>
-      )}
+      {filteredMenu.length === 0 && <p>No matching restaurants found.</p>}
       {filteredMenu.map((currFood) => {
         return (
           <section key={currFood.id}>
@@ -24,7 +22,7 @@ const Menu = ({ title }) => {
               image={currFood.img}
               title={currFood.title}
               location={currFood.location}
-              rating={`${currFood.rating}★`}
+              rating={currFood.rating === "New" ? "New" : `${currFood.rating}★`}
               amount={`₹${currFood.amount} for one`}
               time={`${currFood.time} min`}
             />
