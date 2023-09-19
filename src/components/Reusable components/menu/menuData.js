@@ -8,6 +8,7 @@ const foodData = [
     amount: 100,
     time: 29,
     isVeg: false,
+    address: ['Bangaluru'],
   },
   {
     id: 1,
@@ -18,6 +19,7 @@ const foodData = [
     amount: 150,
     time: 42,
     isVeg: false,
+    address: [`Delhi`],
   },
   {
     id: 2,
@@ -28,6 +30,7 @@ const foodData = [
     amount: 150,
     time: 45,
     isVeg: false,
+    address: [`Mumbai`],
   },
   {
     id: 3,
@@ -38,6 +41,7 @@ const foodData = [
     amount: 150,
     time: 41,
     isVeg: true,
+    address: [`Delhi`],
   },
   {
     id: 4,
@@ -48,6 +52,7 @@ const foodData = [
     amount: 150,
     time: 21,
     isVeg: false,
+    address: [`Mumbai`],
   },
   {
     id: 5,
@@ -58,6 +63,7 @@ const foodData = [
     amount: 150,
     time: 49,
     isVeg: true,
+    address: [`Bangaluru`],
   },
   {
     id: 6,
@@ -68,6 +74,7 @@ const foodData = [
     amount: 150,
     time: 40,
     isVeg: true,
+    address: [`Mumbai`, 'Delhi'],
   },
   {
     id: 7,
@@ -78,6 +85,7 @@ const foodData = [
     amount: 150,
     time: 21,
     isVeg: true,
+    address: [`Delhi`,'Mumbai'],
   },
   {
     id: 8,
@@ -88,6 +96,7 @@ const foodData = [
     amount: 200,
     time: 18,
     isVeg: false,
+    address: [`Mumbai`,'Bangaluru'],
   },
   {
     id: 9,
@@ -98,6 +107,7 @@ const foodData = [
     amount: 200,
     time: 25,
     isVeg: true,
+    address: [`Delhi`,'Mumbai'],
   },
   {
     id: 10,
@@ -108,6 +118,7 @@ const foodData = [
     amount: 200,
     time: 20,
     isVeg: false,
+    address: [`Mumbai`,'Bangaluru'],
   },
   {
     id: 11,
@@ -118,6 +129,7 @@ const foodData = [
     amount: 200,
     time: 33,
     isVeg: true,
+    address: [`Delhi`,'Mumbai'],
   },
   {
     id: 12,
@@ -128,6 +140,7 @@ const foodData = [
     amount: 200,
     time: 24,
     isVeg: false,
+    address: [`Mumbai`,'Bangaluru'],
   },
   {
     id: 13,
@@ -139,6 +152,7 @@ const foodData = [
     time: 25,
 
     isVeg: false,
+    address: [`Delhi`,'Bangaluru'],
   },
   {
     id: 14,
@@ -149,6 +163,8 @@ const foodData = [
     amount: 150,
     time: 16,
     isVeg: true,
+    address: [`Mumbai`, 'Delhi'],
+    
   },
 ];
 export default foodData;

@@ -9,7 +9,7 @@ const AppState = (props) => {
   const [menu, setMenu] = useState(menuData);
   const [brand, setBrand] = useState(brandData);
   const [firstOrder, setFirstOrder] = useState(foodData);
-  const [address, setAddress] = useState("Mumbai");
+  const [address, setAddress] = useState("");
   const [collection, SetCollection] = useState(collectionData);
   const handleLocation = (e) => {
     setAddress(e.target.value);

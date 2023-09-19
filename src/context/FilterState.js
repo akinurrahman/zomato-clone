@@ -5,7 +5,7 @@ const FilterContext = createContext();
 
 const FilterState = (props) => {
   // Access menu from AppContext
-  const { menu } = useContext(AppContext);
+  const { menu, address } = useContext(AppContext);
 
   // State to store the search input value
   const [search, setSearch] = useState("");
@@ -24,7 +24,7 @@ const FilterState = (props) => {
   };
 
   // Filter the menu based on search, vegetarian, and rating criteria
-  const filterMenuByTitleAndLocation = menu.filter((currElem) => {
+  const filteredMenu = menu.filter((currElem) => {
     const searchTerm = search.toLowerCase();
     const titleMatch = currElem.title.toLowerCase().includes(searchTerm);
     const locationMatch = currElem.location.toLowerCase().includes(searchTerm);
@@ -35,14 +35,23 @@ const FilterState = (props) => {
     // Check if the rating is higher than or equal to 4 when the rating filter is active
     const isRatingMatch = !rating || parseFloat(currElem.rating) >= 4;
 
+    // Check if the selected address matches any of the product's addresses
+    const addressMatch = address === "" || currElem.address.includes(address);
+
     // Include the item in the filtered result if all conditions are met
-    return (titleMatch || locationMatch) && isVegetarian && isRatingMatch;
+    return (
+      (titleMatch || locationMatch) &&
+      isVegetarian &&
+      isRatingMatch &&
+      addressMatch
+    );
   });
+
   return (
     // Provide the filtered data and filter handlers to child components
     <FilterContext.Provider
       value={{
-        filterMenuByTitleAndLocation,
+        filteredMenu,
         search,
         handleSearch,
         isVegFilterActive,

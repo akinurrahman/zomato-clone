@@ -6,7 +6,7 @@ import { FilterContext } from "../../../context/FilterState";
 
 const Menu = ({ title }) => {
   const { address } = useContext(AppContext);
-  const { filterMenuByTitleAndLocation } = useContext(FilterContext);
+  const { filteredMenu } = useContext(FilterContext);
   return (
     <div className="menu-container">
       <section className="title-container">
@@ -14,10 +14,10 @@ const Menu = ({ title }) => {
           {title} {address}
         </p>
       </section>
-      {filterMenuByTitleAndLocation.length === 0 && (
+      {filteredMenu.length === 0 && (
         <p>No matching restaurants found.</p>
       )}
-      {filterMenuByTitleAndLocation.map((currFood) => {
+      {filteredMenu.map((currFood) => {
         return (
           <section key={currFood.id}>
             <Card

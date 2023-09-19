@@ -24,13 +24,9 @@ const Header = () => {
                 value={address}
               >
                 <option>Choose your Address</option>
-                <option value="delhi">Delhi</option>
-                <option value="Pune">Pune</option>
-                <option value="Dhubri">Dhubri</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
                 <option value="Bangaluru">Bangaluru</option>
-                <option value="Noida">Noida</option>
-                <option value="Guwahati">Guwahati</option>
-                <option value="Kolkata">Kolkata</option>
               </select>
               |
             </li>
