@@ -1,12 +1,14 @@
-import React from 'react'
-import Menu from '../../components/Reusable components/menu/Menu'
+import React from "react";
+import Menu from "../../components/Reusable components/menu/Menu";
+import Filter from "../../components/filter/Filter";
 
 const Index = () => {
   return (
     <div>
-      <Menu title="Restaurants in "/>
+      <Filter />
+      <Menu title="Restaurants in " />
     </div>
-  )
-}
+  );
+};
 
-export default Index
+export default Index;

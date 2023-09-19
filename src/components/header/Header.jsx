@@ -22,6 +22,7 @@ const Header = () => {
                 className="location"
                 onChange={handleLocation}
                 value={address}
+                style={{ color: "#696969" }}
               >
                 <option>Choose your Address</option>
                 <option value="Delhi">Delhi</option>
